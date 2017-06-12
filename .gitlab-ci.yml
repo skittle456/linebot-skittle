@@ -1,0 +1,7 @@
+staging:
+  stage: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=h3-crm-line-fb --api-key=6bae627d-bf61-4e0a-8e97-e0d580fe53c8
+  only:
+  - master
